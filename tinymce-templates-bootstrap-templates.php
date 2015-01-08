@@ -15,8 +15,12 @@ $tinymce_templates_bootstrap_templates->register();
 
 class Tinymce_Templates_Bootstrap_Templates
 {
+	private $style;
+	private $version = 'v3.3.1';
+
 	public function register()
 	{
+		$this->style   = plugins_url( 'css/bootstrap-custom.css', __FILE__ );
 		add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
 	}
 
@@ -28,15 +32,22 @@ class Tinymce_Templates_Bootstrap_Templates
 				array( $this, 'tinymce_templates_content' ), 9, 3 );
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
+		add_action( 'admin_head-post.php', array( $this, 'admin_head' ) );
+		add_action( 'admin_head-post-new.php', array( $this, 'admin_head' ) );
+	}
+
+	public function admin_head()
+	{
+		add_editor_style( add_query_arg( array( 'ver' => $this->version ), $this->style ) );
 	}
 
 	public function wp_enqueue_scripts()
 	{
 		wp_enqueue_style(
 			'tinymce-templates-bootstrap',
-			plugins_url( 'css/bootstrap-custom.css', __FILE__ ),
+			$this->style,
 			array(),
-			filemtime( dirname( __FILE__ ) . '/css/bootstrap-custom.css' )
+			$this->version
 		);
 	}
 
