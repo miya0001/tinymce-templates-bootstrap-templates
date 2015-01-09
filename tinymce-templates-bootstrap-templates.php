@@ -72,56 +72,101 @@ class Tinymce_Templates_Bootstrap_Templates
 	{
 		return array(
 			// Alerts
-			'bt001' => array(
+			'alert-success' => array(
 				'title'        => 'Alert Success',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="alert alert-success" role="alert">{$content}</div></div>',
 			),
-			'bt002' => array(
+			'alert-info' => array(
 				'title'        => 'Alert Info',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="alert alert-info" role="alert">{$content}</div></div>',
 			),
-			'bt003' => array(
+			'alert-warning' => array(
 				'title'        => 'Alert Warning',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="alert alert-warning" role="alert">{$content}</div></div>',
 			),
-			'bt004' => array(
+			'alert-danger' => array(
 				'title'        => 'Alert Danger',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="alert alert-danger" role="alert">{$content}</div></div>',
 			),
 			// Panels
-			'bt005' => array(
+			'panel-default' => array(
 				'title'        => 'Panel',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">{$title}</h3></div><div class="panel-body">{$content}</div></div></div>',
 			),
-			'bt006' => array(
+			'panel-prmary' => array(
 				'title'        => 'Panel Primary',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title">{$title}</h3></div><div class="panel-body">{$content}</div></div></div>',
 			),
-			'bt007' => array(
+			'panel-success' => array(
 				'title'        => 'Panel Success',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="panel panel-success"><div class="panel-heading"><h3 class="panel-title">{$title}</h3></div><div class="panel-body">{$content}</div></div></div>',
 			),
-			'bt008' => array(
+			'panel-info' => array(
 				'title'        => 'Panel Info',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="panel panel-info"><div class="panel-heading"><h3 class="panel-title">{$title}</h3></div><div class="panel-body">{$content}</div></div></div>',
 			),
-			'bt009' => array(
+			'panel-warning' => array(
 				'title'        => 'Panel Warning',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="panel panel-warning"><div class="panel-heading"><h3 class="panel-title">{$title}</h3></div><div class="panel-body">{$content}</div></div></div>',
 			),
-			'bt010' => array(
+			'panel-danger' => array(
 				'title'        => 'Panel Danger',
 				'is_shortcode' => true,
 				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="panel panel-danger"><div class="panel-heading"><h3 class="panel-title">{$title}</h3></div><div class="panel-body">{$content}</div></div></div>',
+			),
+			'btn-default' => array(
+				'title'        => 'Button',
+				'is_shortcode' => true,
+				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><a href="{$href}" class="btn btn-lg btn-default">{$text}</a></div>',
+			),
+			'btn-primary' => array(
+				'title'        => 'Button Primary',
+				'is_shortcode' => true,
+				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><a href="{$href}" class="btn btn-lg btn-primary">{$text}</a></div>',
+			),
+			'btn-success' => array(
+				'title'        => 'Button Success',
+				'is_shortcode' => true,
+				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><a href="{$href}" class="btn btn-lg btn-success">{$text}</a></div>',
+			),
+			'btn-info' => array(
+				'title'        => 'Button Info',
+				'is_shortcode' => true,
+				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><a href="{$href}" class="btn btn-lg btn-info">{$text}</a></div>',
+			),
+			'btn-warning' => array(
+				'title'        => 'Button Warning',
+				'is_shortcode' => true,
+				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><a href="{$href}" class="btn btn-lg btn-warning">{$text}</a></div>',
+			),
+			'btn-danger' => array(
+				'title'        => 'Button Danger',
+				'is_shortcode' => true,
+				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><a href="{$href}" class="btn btn-lg btn-danger">{$text}</a></div>',
+			),
+			'well' => array(
+				'title'        => 'Well',
+				'is_shortcode' => true,
+				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="well">{$content}</div></div>',
+			),
+			'well-lg' => array(
+				'title'        => 'Well Large',
+				'is_shortcode' => true,
+				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="well well-lg">{$content}</div></div>',
+			),
+			'well-sm' => array(
+				'title'        => 'Well Small',
+				'is_shortcode' => true,
+				'content'      => '<div class="tinymce-templates-bootstrap-wrap"><div class="well well-sm">{$content}</div></div>',
 			),
 		);
 	}
